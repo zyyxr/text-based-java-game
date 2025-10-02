@@ -1,0 +1,86 @@
+player:Rayaan
+map:room1,6,5,4,10
+room:room1,Room 1,Bathroom of the Terry household.,false,false
+item:item1,dead flashlight,A dead flashlight that has run of power.,false
+item:item2,batteries,A packet of batteries.,false
+exit:exit1,north,A door north of you which leads into the hallway.,room2,true
+person:person1,george,A little kid named George on the floor whose leg is severely injured.,false,"I t-...tr-...tried to run away from the ghost of Fraudima but it attacked me before I could get away... What can I do now?"
+combination:item1,item2,equipment,equip1,flashlight,A state-of-the-art flashlight capable of lighting up even the darkest of scenes.,false,shine,room1,null,You lit up the room - your surroundings are now visible!
+-----------
+room:room2,Room 2,Hallway of the haunted house.,false,false
+container:drawers1,drawers,A series of drawers covered in dust.,false
+exit:exit2,south,South of you will lead into the bathroom.,room1,false
+exit:exit3,east,The hallway extends east of you.,room3,false
+exit:exit5,west,The hallway also extends west of you.,room5,false
+exit:exit11,north,Ahead of you is a flight of stairs down to the ground floor.,room7,false
+-----------
+room:room3,Room 3,Hallway.,false,false
+container:painting1,painting,A large painting of the late "Fraudima von Terry" painted by Leonardo da Vinci.,false
+container:awards1,awards,A collection of awards and medals dedicated to singing.,false
+exit:exit4,west,The hallway extends east of you.,room2,false
+exit:exit7,east,Fraudima Von Terry's bedroom lies just east of you.,room4,false
+-----------
+room:room4,Room 4,Fraudima Von Terry's Bedroom.,false,false
+person:person2,ima,A chocaholic named Ima indulging in the stash of chocolate.,false,"Mmm... chocolate...."
+equipment:equip2,key,A golden key that seems to resemble that of a cabinet key.,false,open,cabinet1,item3,You opened the cabinet and found a book!
+container:drawings1,drawings,A series of drawings dedicated to a famous musical band.,false
+container:chocolates1,chocolates,A stash of chocolates spanning across the floor.,false
+exit:exit8,west,The door to the hallway is west of you.,room3,false
+-----------
+room:room5,Room 5,Hallway.,false,false
+person:person3,cleaner,A panicking cleaner intensely searching the surroundings for something.,false,"Where? Where is it......? I need to find this cabinet key or I'm in trouble...."
+container:cabinet1,cabinet,A cabinet containing a wide variety of books.,false
+item:item3,book,An ancient book that seems to have nothing written in it. It may help if you had a highlighter...,true
+exit:exit6,east,The hallway extends east of you.,room2,false
+exit:exit9,west,Sir Fia's bedroom lies just west of you.,room6,false
+-----------
+room:room6,Room 6,Sir Fia's Bedroom.,false,false
+equipment:equip4,paperclip,A slightly deformed paperclip.,false,open,cupboards1,item7,You used the paperclip to pick the cupboard lock open and found a gold medal!
+container:mess1,mess,Numerous utensils and bowls of mouldy food covering the room.,false
+exit:exit10,east,The door to the hallway is east of you.,room5,false
+-----------
+room:room7,Room 7,On the stairs.,false,false
+container:painting2,painting,More paintings dedicated to the Terry family; they all seem to be torn apart and vandalised.,false
+exit:exit12,south,Behind you will lead to the hallway of the first floor.,room2,false
+exit:exit13,north,Ahead of you will lead to the ground floor.,room8,false
+-----------
+room:room8,Room 8,The ground floor.,false,false
+person:person4,charles,A boy (Charles) sitting beside the stairs with his head in his hands.,false,"I want to get out.... but this place is too scary! I can't even stand straight..."
+exit:exit14,south,Behind you will lead to the stairs up the house.,room7,false
+exit:exit15,east,To your right is the living room.,room10,false
+exit:exit17,west,To your left is the kitchen.,room9,false
+exit:exit19,north,The front door lies just ahead of you.,room11,false
+-----------
+room:room9,Room 9,Kitchen.,false,false
+item:item4,highlighter,A highlighter labelled as one that can reveal messages written in secret ink.,false
+container:cupboards1,cupboards,Several locked cupboards containing nothing but broken plates.,false
+person:person5,bilal,A teenage boy (Bilal) who's searching every cabinet and drawer in the kitchen.,false,"This haunted house is wicked! I saw a gold medal in one of these cupboards but it's locked..."
+item:item7,gold medal,A gold medal dedicated to Lady Tabitha for being the best horse-rider.,true
+combination:item3,item4,equipment,equip3,spell book,A book which contains numerous anti-ghost messages which are written in invisible ink.,false,use,ghost1,equip5,You recited the messages of the book on the ghost of Fraudima - she disappears and removes her curse on the house. You pick up an amulet.
+exit:exit18,east,East of you will lead you to the center of the ground floor.,room8,false
+-----------
+room:room10,Room 10,Living Room.,false,false
+container:fire1,fire,A fireplace in the front room keeping the house warm with its noise the only sound occupying the house.,false
+item:item5,coin,A shiny rare coin that seems to be of some value.,false
+exit:exit16,west,The base of the ground floor is just west of you.,room8,false
+-----------
+room:room11,Room 11,Front Door.,false,false
+container:ghost1,ghost,The ghost of Fraudima von Terry facing the door - she remains impervious to any contact/sound.,false
+equipment:equip5,amulet,A very valuable and precious amulet that the Terry family cherished greatly. It has the ability to open any hidden exits near the opening of the house.,true,use,room11,null,The amulet reveals a little tunnel in the corner of the room which extends outside of the house.
+container:notes1,notes,Several pages of cryptic messages pinned to the walls near the front door. Who knows what they may say...,false
+exit:exit20,south,The base of the ground floor is behind you.,room8,false
+exit:exit21,north,A tunnel leading outside just ahead of you.,room12,true
+-----------
+room:room12,Exit Room,end of game.,false,true
+-----------
+missions:Get a functioning flashlight.,20,false,Combined broken flashlight and batteries to create a flashlight - 20 points awarded,equip1
+missions:Find a golden key.,10,false,Picked up the golden key in Fraudima's bedroom - 10 points awarded,equip2
+missions:Get the anti-ghost spell book.,20,false,Combined the book and invisible-ink-highlighter to create the spell book - 20 points awarded,equip3
+missions:Find a paperclip.,5,false,Found the paperclip in Sir Fia's bedroom - 5 points awarded,equip4
+missions:Find Lady Tabitha's gold medal.,50,false,Used the paperclip in Fia's bedroom to unlock the kitchen cupboards and retrieve Lady Tabitha's gold medal - 50 points awarded,item7
+missions:Find a gold coin.,10,false,Picked up the coin in the front room - 10 points awarded,item5
+missions:Scare the ghost of Fraudima away.,50,false,Recited the anti-ghost spells of the book to Fraudima at the front door to scare her away - 50 points awarded,equip5
+
+
+
+
