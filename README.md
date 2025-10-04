@@ -13,7 +13,9 @@ __Structure of the ```game.txt``` file:__
 * person: { ``person id``, ``person name``, ``person description``, ``is the person hidden?``, ``person dialogue when interacted with`` }
 **--------------------------------**
 * missions: { ``mission objective``, ``mission points reward``, ``is mission completed?`` (keep false), ``message displayed when mission is completed``, ``id of item needed to complete mission`` }
-* combination: {``id of first item needed``, ``id of second item needed``, ``is new object item/equipment?``, **(if new object is an item, fill in with same details as you did for the item line, and likewise for equipment)** }
+* combination: {``id of first item needed``, ``id of second item needed``, ``is new object item/equipment?``, ``(if new object is an item, fill in with same details as you did for the item line, and likewise for equipment)`` }
+
+If you are still unsure on how to fill in the fields, please refer to the example data in ``data.txt``, so that you may get an idea.
 
 **Downloading the files:**
 * You will need to download all folders and files (except the ```README.md``` file) in order to run the game successfully.
