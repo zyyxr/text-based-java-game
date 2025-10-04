@@ -2,8 +2,8 @@
 A Java program that, given a specfically formatted text file, creates a basic text-based game using the contents of ```game.txt```.
 
 __Structure of the ```game.txt``` file:__
-* player: { your player name }
-* map: { your starting room id, map grid length, map grid width, starting X-position, starting Y-position }   (**when noting the starting X/Y positions, for whatever position you intend to put, n, instead put 2n as the grid is twice as big to allow it to be spaced out**)
+* player: { ``your player name`` }
+* map: { ``your starting room id``, ``map grid length``, ``map grid width``, starting X-position, starting Y-position }   (**when noting the starting X/Y positions, for whatever position you intend to put, n, instead put 2n as the grid is twice as big to allow it to be spaced out**)
 * room: { room id, room name, room description, is room hidden?, is this the final room? }
 * exit: { exit id, exit name, exit description, id of the room the exit leads to, is this exit initially meant to be hidden?}
 **-- OPTIONAL ROOM-SPECIFIC FEATURES: add these fields below before adding another ```room:``` line to add to the current room --**
